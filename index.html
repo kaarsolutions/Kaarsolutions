@@ -12,18 +12,23 @@
 body{font-family:'Inter',sans-serif;background:#020617;color:#e2e8f0;}
 
 .navbar{
-display:flex;justify-content:space-between;align-items:center;
+display:flex;justify-content:flex-end;align-items:center;
 padding:20px 40px;position:fixed;width:100%;
 background:rgba(2,6,23,0.8);backdrop-filter:blur(10px);
 }
 
-.navbar img{height:45px;}
 .navbar a{color:white;margin-left:20px;text-decoration:none;}
 
 .hero{
 height:100vh;display:flex;align-items:center;justify-content:center;
 text-align:center;background:radial-gradient(circle,#0f172a,#020617);
 padding:20px;
+flex-direction:column;
+}
+
+.hero-logo{
+width:220px;
+margin-bottom:20px;
 }
 
 .hero h1{font-size:2.5rem;margin-bottom:20px;}
@@ -67,11 +72,6 @@ font-size:22px;text-decoration:none;
 <body>
 
 <header class="navbar">
-<div style="display:flex;align-items:center;gap:10px;">
-<img src="logo.png" alt="KAAR SOLUTIONS">
-<h2>KAAR</h2>
-</div>
-
 <nav>
 <a href="#servicios">Servicios</a>
 <a href="#contacto">Contacto</a>
@@ -79,11 +79,13 @@ font-size:22px;text-decoration:none;
 </header>
 
 <section class="hero">
-<div>
+<img src="logo.png" alt="KAAR SOLUTIONS" class="hero-logo">
+
 <h1>Impulsamos tu <span>tecnología</span></h1>
+
 <p>Soporte técnico, CCTV y redes para empresas y hogares en Panamá.</p>
+
 <a class="btn" href="https://wa.me/50768648179">Solicitar soporte</a>
-</div>
 </section>
 
 <section class="section" id="servicios">
