@@ -10,25 +10,68 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Inter',sans-serif;background:#020617;color:#e2e8f0;}
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;position:fixed;width:100%;background:rgba(2,6,23,0.7);backdrop-filter:blur(10px);}
+
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:20px 40px;position:fixed;width:100%;
+background:rgba(2,6,23,0.8);backdrop-filter:blur(10px);
+}
+
+.navbar img{height:45px;}
 .navbar a{color:white;margin-left:20px;text-decoration:none;}
-.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle,#0f172a,#020617);}
-.hero h1{font-size:3rem;margin-bottom:20px;}
+
+.hero{
+height:100vh;display:flex;align-items:center;justify-content:center;
+text-align:center;background:radial-gradient(circle,#0f172a,#020617);
+padding:20px;
+}
+
+.hero h1{font-size:2.5rem;margin-bottom:20px;}
 .hero span{color:#22c55e;}
-.hero p{margin-bottom:30px;font-size:1.2rem;}
-.btn{background:#22c55e;padding:15px 30px;border-radius:12px;color:white;text-decoration:none;font-weight:600;}
+.hero p{margin-bottom:30px;font-size:1.1rem;}
+
+.btn{
+background:#22c55e;padding:15px 30px;border-radius:12px;
+color:white;text-decoration:none;font-weight:600;
+}
+
 .section{padding:100px 20px;text-align:center;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:50px;}
-.card{background:#0f172a;padding:30px;border-radius:20px;}
-footer{padding:20px;text-align:center;background:#020617;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:16px;border-radius:50%;font-size:22px;text-decoration:none;}
+.container{max-width:1100px;margin:auto;}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;margin-top:40px;
+}
+
+.card{
+background:#0f172a;padding:25px;border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{transform:translateY(-5px);}
+
+footer{
+padding:20px;text-align:center;background:#020617;
+}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;
+padding:16px;border-radius:50%;
+font-size:22px;text-decoration:none;
+}
 </style>
 </head>
 
 <body>
 
 <header class="navbar">
-<h2>KAAR SOLUTIONS</h2>
+<div style="display:flex;align-items:center;gap:10px;">
+<img src="logo.png" alt="KAAR SOLUTIONS">
+<h2>KAAR</h2>
+</div>
+
 <nav>
 <a href="#servicios">Servicios</a>
 <a href="#contacto">Contacto</a>
@@ -38,18 +81,50 @@ footer{padding:20px;text-align:center;background:#020617;}
 <section class="hero">
 <div>
 <h1>Impulsamos tu <span>tecnología</span></h1>
-<p>Soporte técnico, CCTV y redes en Panamá.</p>
+<p>Soporte técnico, CCTV y redes para empresas y hogares en Panamá.</p>
 <a class="btn" href="https://wa.me/50768648179">Solicitar soporte</a>
 </div>
 </section>
 
 <section class="section" id="servicios">
-<h2>Servicios</h2>
+<div class="container">
+
+<h2>Servicios Tecnológicos</h2>
+
 <div class="grid">
-<div class="card">Soporte Técnico</div>
-<div class="card">Reparación de Equipos</div>
-<div class="card">Instalación CCTV</div>
-<div class="card">Redes y Cableado</div>
+
+<div class="card">
+<h3>🛠 Soporte Técnico Informático</h3>
+<p>Diagnóstico, mantenimiento, eliminación de virus y soporte remoto o presencial.</p>
+</div>
+
+<div class="card">
+<h3>💻 Reparación de Equipos</h3>
+<p>Reparación de laptops y computadoras, fallas de hardware y software.</p>
+</div>
+
+<div class="card">
+<h3>📹 Instalación de CCTV</h3>
+<p>Cámaras de seguridad con monitoreo desde celular y grabación.</p>
+</div>
+
+<div class="card">
+<h3>🌐 Redes y Cableado</h3>
+<p>Instalación de redes, cableado estructurado y optimización de internet.</p>
+</div>
+
+<div class="card">
+<h3>🛒 Venta de Equipos</h3>
+<p>Computadoras, cámaras, accesorios y soluciones tecnológicas.</p>
+</div>
+
+<div class="card">
+<h3>📊 Asesoría Tecnológica</h3>
+<p>Optimización de sistemas y soluciones para empresas.</p>
+</div>
+
+</div>
+
 </div>
 </section>
 
